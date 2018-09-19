@@ -1,0 +1,153 @@
+./ff -p /home/adrianprodri/3-Computacion_y_sistemas_inteligentes/TSI/Practicas/Practica2/Ejercicios/ -o Ej6dominio.pddl -f Ej6problema3.pddl
+
+ff: parsing domain file
+domain 'EJERCICIO1-DOMAIN' defined
+ ... done.
+ff: parsing problem file
+problem 'EJERCICIO1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+task contains conditional effects. turning off state domination.
+
+
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   28 into depth [1][2]
+                                  27            [1][2][3][4]
+                                  26            [1][2]
+                                  25            [1]
+                                  24            [1]
+                                  21            [1][2]
+                                  20            [1][2]
+                                  15            [1]
+                                  13            [1][2][3][4][5][6][7]
+                                  12            [1][2][3][4][5][6][7][8]
+                                  11            [1][2][3][4][5][6][7][8][9][10][11]
+                                   9            [1][2][3][4][5][6][7][8][9][10][11][12]
+                                   8            [1][2][3][4][5][6][7]
+                                   7            [1][2][3][4][5][6][7]
+                                   5            [1]
+                                   4            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22][23][24][25][26][27][28][29][30][31]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0
+
+ff: found legal plan as follows
+
+step    0: MOVE-FORWARD SOUTH PLAYER2 Z24 Z22
+        1: TURN-LEFT SOUTH PLAYER2
+        2: TURN-RIGHT NORTH PLAYER1
+        3: MOVE-FORWARD EAST PLAYER1 Z12 Z11
+        4: TURN-LEFT EAST PLAYER1
+        5: TURN-LEFT NORTH PLAYER1
+        6: TAKE-OBJECT MANZANAS PLAYER1 Z11
+        7: MOVE-FORWARD WEST PLAYER1 Z11 Z12
+        8: MOVE-FORWARD WEST PLAYER1 Z12 Z13
+        9: MOVE-FORWARD WEST PLAYER1 Z13 Z14
+       10: TURN-RIGHT WEST PLAYER1
+       11: TURN-RIGHT EAST PLAYER2
+       12: MOVE-FORWARD SOUTH PLAYER2 Z22 Z3
+       13: TURN-RIGHT SOUTH PLAYER2
+       14: MOVE-FORWARD NORTH PLAYER1 Z14 Z15
+       15: GIVE-OBJECT Z15 MANZANAS PLAYER1 BRUJA
+       16: MOVE-FORWARD WEST PLAYER2 Z3 Z2
+       17: TURN-RIGHT WEST PLAYER2
+       18: TURN-RIGHT NORTH PLAYER2
+       19: TAKE-OBJECT OSCARS PLAYER2 Z2
+       20: MOVE-FORWARD EAST PLAYER2 Z2 Z3
+       21: TURN-LEFT EAST PLAYER2
+       22: PUT-OBJECT-BAG OSCARS PLAYER2
+       23: MOVE-FORWARD NORTH PLAYER1 Z15 Z16
+       24: TURN-LEFT NORTH PLAYER1
+       25: TURN-LEFT WEST PLAYER1
+       26: TAKE-OBJECT ORO PLAYER1 Z16
+       27: MOVE-FORWARD SOUTH PLAYER1 Z16 Z15
+       28: DROP-OBJECT ORO PLAYER1 Z15
+       29: EXTRACT-OBJECT-BAG OSCARS PLAYER2
+       30: GIVE-OBJECT Z3 OSCARS PLAYER2 LEONARDODICAPRIO
+       31: TAKE-OBJECT BIKINI PLAYER2 Z3
+       32: TURN-RIGHT NORTH PLAYER2
+       33: MOVE-FORWARD-WATER EAST PLAYER2 Z3 Z4
+       34: TURN-RIGHT EAST PLAYER2
+       35: PUT-OBJECT-BAG BIKINI PLAYER2
+       36: TURN-RIGHT SOUTH PLAYER2
+       37: TAKE-OBJECT ROSAS PLAYER2 Z4
+       38: MOVE-FORWARD WEST PLAYER2 Z4 Z3
+       39: TURN-RIGHT WEST PLAYER2
+       40: MOVE-FORWARD NORTH PLAYER2 Z3 Z22
+       41: GIVE-OBJECT Z22 ROSAS PLAYER2 PRINCESA
+       42: TURN-RIGHT NORTH PLAYER2
+       43: TURN-RIGHT EAST PLAYER2
+       44: MOVE-FORWARD SOUTH PLAYER2 Z22 Z3
+       45: TURN-RIGHT SOUTH PLAYER2
+       46: MOVE-FORWARD WEST PLAYER2 Z3 Z2
+       47: MOVE-FORWARD WEST PLAYER2 Z2 Z1
+       48: TURN-RIGHT WEST PLAYER2
+       49: TURN-RIGHT NORTH PLAYER2
+       50: TAKE-OBJECT OSCARS PLAYER2 Z1
+       51: MOVE-FORWARD EAST PLAYER2 Z1 Z2
+       52: MOVE-FORWARD EAST PLAYER2 Z2 Z3
+       53: GIVE-OBJECT Z3 OSCARS PLAYER2 LEONARDODICAPRIO
+       54: MOVE-FORWARD-WATER EAST PLAYER2 Z3 Z4
+       55: MOVE-FORWARD EAST PLAYER2 Z4 Z5
+       56: TURN-RIGHT EAST PLAYER2
+       57: TAKE-OBJECT ROSAS PLAYER2 Z5
+       58: GIVE-OBJECT Z5 ROSAS PLAYER2 PRINCIPE
+       59: MOVE-FORWARD SOUTH PLAYER2 Z5 Z6
+       60: TURN-LEFT SOUTH PLAYER2
+       61: TURN-LEFT EAST PLAYER2
+       62: TAKE-OBJECT ALGORITMOS PLAYER2 Z6
+       63: MOVE-FORWARD NORTH PLAYER2 Z6 Z5
+       64: GIVE-OBJECT Z5 ALGORITMOS PLAYER2 PRINCIPE
+       65: TAKE-OBJECT ORO PLAYER1 Z15
+       66: GIVE-OBJECT Z15 ORO PLAYER1 BRUJA
+       67: TURN-LEFT NORTH PLAYER2
+       68: MOVE-FORWARD-WATER WEST PLAYER2 Z5 Z4
+       69: MOVE-FORWARD WEST PLAYER2 Z4 Z3
+       70: MOVE-FORWARD WEST PLAYER2 Z3 Z2
+       71: TURN-LEFT WEST PLAYER2
+       72: MOVE-FORWARD-WATER SOUTH PLAYER2 Z2 Z25
+       73: TURN-LEFT SOUTH PLAYER2
+       74: TURN-LEFT EAST PLAYER2
+       75: TAKE-OBJECT ALGORITMOS PLAYER2 Z25
+       76: MOVE-FORWARD NORTH PLAYER2 Z25 Z2
+       77: TURN-LEFT NORTH PLAYER2
+       78: MOVE-FORWARD WEST PLAYER2 Z2 Z1
+       79: TURN-RIGHT WEST PLAYER2
+       80: DROP-OBJECT ALGORITMOS PLAYER2 Z1
+       81: MOVE-FORWARD NORTH PLAYER2 Z1 Z20
+       82: TURN-LEFT NORTH PLAYER2
+       83: TAKE-OBJECT ZAPATILLA PLAYER2 Z20
+       84: MOVE-FORWARD WEST PLAYER2 Z20 Z19
+       85: TURN-LEFT WEST PLAYER2
+       86: MOVE-FORWARD-FOREST SOUTH PLAYER2 Z19 Z18
+       87: MOVE-FORWARD SOUTH PLAYER2 Z18 Z17
+       88: TURN-LEFT SOUTH PLAYER1
+       89: TURN-LEFT EAST PLAYER1
+       90: MOVE-FORWARD NORTH PLAYER1 Z15 Z16
+       91: DROP-OBJECT ZAPATILLA PLAYER2 Z17
+       92: MOVE-FORWARD NORTH PLAYER1 Z16 Z17
+       93: TAKE-OBJECT ZAPATILLA PLAYER1 Z17
+       94: MOVE-FORWARD-FOREST NORTH PLAYER1 Z17 Z18
+       95: TURN-RIGHT NORTH PLAYER1
+       96: DROP-OBJECT ZAPATILLA PLAYER1 Z18
+       97: MOVE-FORWARD EAST PLAYER1 Z18 Z1
+       98: TAKE-OBJECT ALGORITMOS PLAYER1 Z1
+       99: GIVE-OBJECT Z1 ALGORITMOS PLAYER1 PROFESOR
+
+
+time spent:    0.01 seconds instantiating 5576 easy, 32 hard action templates
+               0.01 seconds reachability analysis, yielding 1543 facts and 846 actions
+               0.00 seconds creating final representation with 422 relevant facts, 14 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+              51.36 seconds searching, evaluating 270716 states, to a max depth of 31
+              51.38 seconds total time

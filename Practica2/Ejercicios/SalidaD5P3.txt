@@ -1,0 +1,132 @@
+./ff -p /home/adrianprodri/3-Computacion_y_sistemas_inteligentes/TSI/Practicas/Practica2/Ejercicios/ -o Ej5dominio.pddl -f Ej5problema3.pddl
+
+ff: parsing domain file
+domain 'EJERCICIO1-DOMAIN' defined
+ ... done.
+ff: parsing problem file
+problem 'EJERCICIO1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+task contains conditional effects. turning off state domination.
+
+
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   23 into depth [1][2][3]
+                                  22            [1]
+                                  21            [1]
+                                  20            [1][2]
+                                  19            [1][2]
+                                  18            [1]
+                                  17            [1][2]
+                                  16            [1][2][3][4]
+                                  15            [1][2]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1][2][3][4]
+                                   4            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22][23][24][25][26][27][28][29][30][31][32][33][34][35][36][37][38][39][40][41][42][43][44][45][46][47][48][49][50][51][52][53][54][55][56][57] --- pruning stopped --- [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17]
+                                   3            [1][2][3][4][5][6][7][8][9][10][11][12][13][14]
+                                   2            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22][23][24][25][26][27][28][29][30][31][32][33][34][35][36][37][38][39][40][41][42][43][44][45][46][47][48][49][50][51][52][53][54][55][56][57][58][59][60][61][62][63][64][65][66][67][68][69][70][71][72][73][74][75][76][77][78] --- pruning stopped --- [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22][23][24]
+                                   1            [1]
+                                   0
+
+ff: found legal plan as follows
+
+step    0: TURN-LEFT NORTH PLAYER1
+        1: MOVE-FORWARD WEST PLAYER1 Z12 Z13
+        2: MOVE-FORWARD WEST PLAYER1 Z13 Z14
+        3: TURN-LEFT WEST PLAYER1
+        4: TURN-LEFT SOUTH PLAYER1
+        5: TAKE-OBJECT ZAPATILLA PLAYER1 Z14
+        6: PUT-OBJECT-BAG ZAPATILLA PLAYER1
+        7: TURN-LEFT EAST PLAYER1
+        8: MOVE-FORWARD NORTH PLAYER1 Z14 Z15
+        9: MOVE-FORWARD NORTH PLAYER1 Z15 Z16
+       10: MOVE-FORWARD NORTH PLAYER1 Z16 Z17
+       11: MOVE-FORWARD-FOREST NORTH PLAYER1 Z17 Z18
+       12: TURN-LEFT NORTH PLAYER1
+       13: TURN-LEFT WEST PLAYER1
+       14: TURN-LEFT SOUTH PLAYER1
+       15: MOVE-FORWARD EAST PLAYER1 Z18 Z1
+       16: MOVE-FORWARD EAST PLAYER1 Z1 Z2
+       17: TAKE-OBJECT OSCARS PLAYER1 Z2
+       18: MOVE-FORWARD EAST PLAYER1 Z2 Z3
+       19: TURN-LEFT EAST PLAYER1
+       20: MOVE-FORWARD NORTH PLAYER1 Z3 Z22
+       21: TURN-LEFT NORTH PLAYER1
+       22: TURN-LEFT WEST PLAYER1
+       23: MOVE-FORWARD SOUTH PLAYER1 Z22 Z3
+       24: TURN-RIGHT SOUTH PLAYER1
+       25: GIVE-OBJECT Z3 OSCARS PLAYER1 LEONARDODICAPRIO
+       26: MOVE-FORWARD WEST PLAYER1 Z3 Z2
+       27: TURN-LEFT WEST PLAYER1
+       28: EXTRACT-OBJECT-BAG ZAPATILLA PLAYER1
+       29: TURN-LEFT SOUTH PLAYER1
+       30: DROP-OBJECT ZAPATILLA PLAYER1 Z2
+       31: MOVE-FORWARD EAST PLAYER1 Z2 Z3
+       32: TAKE-OBJECT BIKINI PLAYER1 Z3
+       33: MOVE-FORWARD-WATER EAST PLAYER1 Z3 Z4
+       34: TURN-LEFT EAST PLAYER1
+       35: PUT-OBJECT-BAG BIKINI PLAYER1
+       36: TURN-LEFT NORTH PLAYER1
+       37: TAKE-OBJECT ROSAS PLAYER1 Z4
+       38: MOVE-FORWARD WEST PLAYER1 Z4 Z3
+       39: TURN-RIGHT WEST PLAYER1
+       40: MOVE-FORWARD NORTH PLAYER1 Z3 Z22
+       41: GIVE-OBJECT Z22 ROSAS PLAYER1 PRINCESA
+       42: TURN-RIGHT NORTH PLAYER1
+       43: TURN-RIGHT EAST PLAYER1
+       44: MOVE-FORWARD SOUTH PLAYER1 Z22 Z3
+       45: TURN-RIGHT SOUTH PLAYER1
+       46: MOVE-FORWARD WEST PLAYER1 Z3 Z2
+       47: TURN-LEFT WEST PLAYER1
+       48: MOVE-FORWARD-WATER SOUTH PLAYER1 Z2 Z25
+       49: TURN-LEFT SOUTH PLAYER1
+       50: TURN-LEFT EAST PLAYER1
+       51: TAKE-OBJECT ALGORITMOS PLAYER1 Z25
+       52: MOVE-FORWARD NORTH PLAYER1 Z25 Z2
+       53: TURN-LEFT NORTH PLAYER1
+       54: MOVE-FORWARD WEST PLAYER1 Z2 Z1
+       55: TURN-LEFT WEST PLAYER1
+       56: TURN-LEFT SOUTH PLAYER1
+       57: GIVE-OBJECT Z1 ALGORITMOS PLAYER1 PROFESOR
+       58: EXTRACT-OBJECT-BAG BIKINI PLAYER1
+       59: DROP-OBJECT BIKINI PLAYER1 Z1
+       60: MOVE-FORWARD EAST PLAYER1 Z1 Z2
+       61: TURN-LEFT EAST PLAYER1
+       62: TAKE-OBJECT ZAPATILLA PLAYER1 Z2
+       63: TURN-LEFT NORTH PLAYER1
+       64: PUT-OBJECT-BAG ZAPATILLA PLAYER1
+       65: MOVE-FORWARD WEST PLAYER1 Z2 Z1
+       66: MOVE-FORWARD-FOREST WEST PLAYER1 Z1 Z18
+       67: TURN-LEFT WEST PLAYER1
+       68: MOVE-FORWARD SOUTH PLAYER1 Z18 Z17
+       69: MOVE-FORWARD SOUTH PLAYER1 Z17 Z16
+       70: TURN-LEFT SOUTH PLAYER1
+       71: TAKE-OBJECT ORO PLAYER1 Z16
+       72: TURN-LEFT EAST PLAYER1
+       73: MOVE-FORWARD NORTH PLAYER1 Z16 Z17
+       74: MOVE-FORWARD-FOREST NORTH PLAYER1 Z17 Z18
+       75: TURN-RIGHT NORTH PLAYER1
+       76: MOVE-FORWARD EAST PLAYER1 Z18 Z1
+       77: MOVE-FORWARD EAST PLAYER1 Z1 Z2
+       78: MOVE-FORWARD EAST PLAYER1 Z2 Z3
+       79: GIVE-OBJECT Z3 ORO PLAYER1 LEONARDODICAPRIO
+
+
+time spent:    0.01 seconds instantiating 2731 easy, 16 hard action templates
+               0.00 seconds reachability analysis, yielding 1428 facts and 423 actions
+               0.00 seconds creating final representation with 374 relevant facts, 12 relevant fluents
+               0.01 seconds computing LNF
+               0.00 seconds building connectivity graph
+               5.00 seconds searching, evaluating 82151 states, to a max depth of 78
+               5.02 seconds total time

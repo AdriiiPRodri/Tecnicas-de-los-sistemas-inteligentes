@@ -1,0 +1,8 @@
+prefix=/home/adrianprodri/catkin_ws_Aestrella/devel
+
+Name: my_astar_planner
+Description: Description of my_astar_planner
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/adrianprodri/catkin_ws_Aestrella/devel/lib 
+Requires: 

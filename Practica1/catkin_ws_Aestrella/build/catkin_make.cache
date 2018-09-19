@@ -1,0 +1,2 @@
+my_astar_planner
+-DCATKIN_DEVEL_PREFIX=/home/adrianprodri/catkin_ws_Aestrella/devel -DCMAKE_INSTALL_PREFIX=/home/adrianprodri/catkin_ws_Aestrella/install -G Unix Makefiles

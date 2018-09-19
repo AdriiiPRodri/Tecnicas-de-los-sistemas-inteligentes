@@ -1,0 +1,104 @@
+./ff -p /home/adrianprodri/3-Computacion_y_sistemas_inteligentes/TSI/Practicas/Practica2/Ejercicios/ -o Ej1dominio.pddl -f Ej1problema1.pddl
+
+ff: parsing domain file
+domain 'EJERCICIO1-DOMAIN' defined
+ ... done.
+ff: parsing problem file
+problem 'EJERCICIO1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+task contains conditional effects. turning off state domination.
+
+
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   20 into depth [1]
+                                  18            [1][2][3]
+                                  17            [1]
+                                  16            [1][2][3]
+                                  15            [1][2][3][4][5]
+                                  13            [1][2][3][4][5]
+                                  12            [1]
+                                  11            [1][2][3][4][5][6]
+                                  10            [1][2]
+                                   9            [1][2]
+                                   8            [1][2][3][4]
+                                   7            [1][2][3][4][5][6][7]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1][2][3][4][5][6][7]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0
+
+ff: found legal plan as follows
+
+step    0: TURN-RIGHT NORTH PLAYER1
+        1: TURN-RIGHT EAST PLAYER1
+        2: MOVE-FORWARD SOUTH PLAYER1 Z1 Z6
+        3: MOVE-FORWARD SOUTH PLAYER1 Z6 Z11
+        4: TAKE-OBJECT ROSAS PLAYER1 Z11
+        5: MOVE-FORWARD SOUTH PLAYER1 Z11 Z16
+        6: MOVE-FORWARD SOUTH PLAYER1 Z16 Z21
+        7: TURN-LEFT SOUTH PLAYER1
+        8: TURN-LEFT EAST PLAYER1
+        9: GIVE-OBJECT Z21 WEST PLAYER1 LEONARDODICAPRIO
+       10: MOVE-FORWARD NORTH PLAYER1 Z21 Z16
+       11: MOVE-FORWARD NORTH PLAYER1 Z16 Z11
+       12: TURN-RIGHT NORTH PLAYER1
+       13: MOVE-FORWARD EAST PLAYER1 Z11 Z12
+       14: TURN-LEFT EAST PLAYER1
+       15: MOVE-FORWARD NORTH PLAYER1 Z12 Z7
+       16: MOVE-FORWARD NORTH PLAYER1 Z7 Z2
+       17: TURN-RIGHT NORTH PLAYER1
+       18: TAKE-OBJECT OSCARS PLAYER1 Z2
+       19: MOVE-FORWARD EAST PLAYER1 Z2 Z3
+       20: GIVE-OBJECT Z3 WEST PLAYER1 PRINCESA
+       21: MOVE-FORWARD EAST PLAYER1 Z3 Z4
+       22: TURN-RIGHT EAST PLAYER1
+       23: TAKE-OBJECT ALGORITMOS PLAYER1 Z4
+       24: MOVE-FORWARD SOUTH PLAYER1 Z4 Z9
+       25: TURN-RIGHT SOUTH PLAYER1
+       26: MOVE-FORWARD WEST PLAYER1 Z9 Z8
+       27: MOVE-FORWARD WEST PLAYER1 Z8 Z7
+       28: TURN-LEFT WEST PLAYER1
+       29: GIVE-OBJECT Z7 WEST PLAYER1 PROFESOR
+       30: MOVE-FORWARD SOUTH PLAYER1 Z7 Z12
+       31: TURN-LEFT SOUTH PLAYER1
+       32: MOVE-FORWARD EAST PLAYER1 Z12 Z13
+       33: TURN-RIGHT EAST PLAYER1
+       34: MOVE-FORWARD SOUTH PLAYER1 Z13 Z18
+       35: MOVE-FORWARD SOUTH PLAYER1 Z18 Z23
+       36: TURN-LEFT SOUTH PLAYER1
+       37: TURN-LEFT EAST PLAYER1
+       38: TAKE-OBJECT MANZANAS PLAYER1 Z23
+       39: MOVE-FORWARD NORTH PLAYER1 Z23 Z18
+       40: MOVE-FORWARD NORTH PLAYER1 Z18 Z13
+       41: TURN-RIGHT NORTH PLAYER1
+       42: GIVE-OBJECT Z13 WEST PLAYER1 BRUJA
+       43: TURN-RIGHT EAST PLAYER1
+       44: MOVE-FORWARD SOUTH PLAYER1 Z13 Z18
+       45: TURN-LEFT SOUTH PLAYER1
+       46: MOVE-FORWARD EAST PLAYER1 Z18 Z19
+       47: TAKE-OBJECT ORO PLAYER1 Z19
+       48: MOVE-FORWARD EAST PLAYER1 Z19 Z20
+       49: TURN-LEFT EAST PLAYER1
+       50: MOVE-FORWARD NORTH PLAYER1 Z20 Z15
+       51: GIVE-OBJECT Z15 WEST PLAYER1 PRINCIPE
+
+
+time spent:    0.00 seconds instantiating 2288 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1041 facts and 2288 actions
+               0.00 seconds creating final representation with 1041 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.03 seconds searching, evaluating 346 states, to a max depth of 7
+               0.03 seconds total time

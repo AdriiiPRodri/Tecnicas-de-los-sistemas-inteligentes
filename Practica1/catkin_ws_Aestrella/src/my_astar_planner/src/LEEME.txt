@@ -1,0 +1,2 @@
+Para poder ejecutar cada una de las versiones de la implementación, se debe copiar el contenido de la implementación desde el archivo al archivo con el nombre myAstarPlanner.cpp
+De igual manera con los .h
